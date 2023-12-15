@@ -14,8 +14,8 @@ namespace AddRowsRuntime {
         }
 
         private void Form1_Load(object sender, EventArgs e) {
+            propertyGridControl1.AutoGenerateRows = false;
             CreateRows();
-
             Person person = new Person();
             person.LastName = "Doe";
             person.FirstName = "John";
