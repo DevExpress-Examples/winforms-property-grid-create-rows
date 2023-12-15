@@ -14,6 +14,7 @@ Namespace AddRowsRuntime
         End Sub
 
         Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
+            propertyGridControl1.AutoGenerateRows = False
             CreateRows()
             Dim person As Person = New Person()
             person.LastName = "Doe"
